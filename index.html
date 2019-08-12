@@ -7,8 +7,10 @@ var formVariants = [
 "https://docs.google.com/forms/d/e/1FAIpQLSfKjg4Jn--IKmdyjLuv1YjQAD9SlpnTjvwjuf-mOXsDEdvJGQ/viewform"
 ];
 
-var variant = (Math.random() * 3) | 0;
-document.write(formVariants[variant]);
+var variantIndex = (Math.random() * 3) | 0;
+var variantUrl = formVariants[variantIndex];
+document.write("Redirecting to " + variantUrl);
+window.location.href = variantUrl;
 </script>
 </head>
 </html>
